@@ -1,0 +1,88 @@
+﻿body {
+    background-color: #ACB9C7 !important;
+}
+
+.swagger-section {
+    display: none;
+}
+
+.swagger-section .swagger-ui-wrap {
+    margin-left: 35px !important;
+    margin-right: 35px !important;
+    max-width: none !important;
+}
+
+#logo {
+    cursor: default !important;
+}
+
+#api_selector {
+    margin-top: 3px !important;
+}
+
+#input_apiKey {
+    width: 300px !important;
+}
+
+#authenticationType {
+    border: 1px solid gray;
+    padding: 3px;
+    font-size: 0.9em;
+}
+
+select {
+    border: none !important;
+    border-radius: 3px !important;
+}
+
+.input input {
+    border: none !important;
+    border-radius: 3px !important;
+    height: 18px !important;
+}
+
+#basicAuthentication {
+    position: relative;
+    left: -10px;
+    margin: 0 10px 0 0 !important;
+}
+
+a {
+    color: black !important;
+}
+
+.header__btn {
+    color: white !important;
+}
+
+a:hover {
+    color: black !important;
+}
+
+.header__btn:hover {
+    color: white !important;
+}
+
+.footer h4 {
+    color: black !important;
+}
+
+li {
+    border-color: transparent !important;
+}
+
+[id^="resource_"] .heading {
+    background-color: #CACDD1;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+.swagger-section .swagger-ui-wrap ul#resources li.resource:last-child {
+     border-bottom: none !important; 
+}
+
+.swagger-section .swagger-ui-wrap ul#resources li.resource {
+    border-bottom: none !important;
+}
+

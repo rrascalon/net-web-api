@@ -1,0 +1,15 @@
+{
+  "applicationName": ".NET WEB API SDK",
+  "titleTextColor": "#FFFFFF", 
+  "headerBackgroundColor": "#192E42",
+  "buttonBackgroundColor": "#356697",
+  "buttonBackgroundHoverColor": "#6899CA",
+  "securityTypes": "Bearer", 
+  "enableSecurityType":  false, 
+  "defaultSecurityType": "Bearer",
+  "bodyBackgroundColor": null,
+  "sectionBackgroundColor": null, 
+  "logo": null,
+  "icon16": null,
+  "icon32": null
+}

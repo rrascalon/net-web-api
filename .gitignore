@@ -3,3 +3,13 @@
 ################################################################################
 
 /Net.Web.Api.Sdk/Net.Web.Api.Sdk.sln.DotSettings.user
+/Net.Web.Api.Sdk/packages
+/Net.Web.Api.Sdk/Net.Web.Customer.Api.Sdk
+/Net.Web.Api.Sdk/Net.Web.Api.Service
+/Net.Web.Api.Sdk/.vs
+/.vs
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk/bin
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk/obj
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk/Net.Web.Api.Sdk.1.0.0.nupkg
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk/Net.Web.Api.Sdk.csproj.user
+*.nupkg

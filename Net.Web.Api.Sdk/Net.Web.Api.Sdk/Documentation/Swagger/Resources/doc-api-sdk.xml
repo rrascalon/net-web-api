@@ -1,0 +1,2455 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Net.Web.Api.Sdk</name>
+    </assembly>
+    <members>
+        <member name="T:Net.Web.Api.Sdk.Attributes.Validations.TokenNameExistsAttribute">
+            <summary>
+            Class TokenNameExistsAttribute.
+            Implements the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+            </summary>
+            <seealso cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Attributes.Validations.TokenNameExistsAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Validates the specified value with respect to the current validation attribute.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context information about the validation operation.</param>
+            <returns>An instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> class.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Attributes.Validations.TokenPayloadValidAttribute">
+            <summary>
+            Class TokenPayloadValidAttribute.
+            Implements the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+            </summary>
+            <seealso cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Attributes.Validations.TokenPayloadValidAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Validates the specified value with respect to the current validation attribute.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context information about the validation operation.</param>
+            <returns>An instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> class.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Attributes.Validations.TokenPayloadValidAttribute.GetDefaultRequiredMessage">
+            <summary>
+            Gets the default required message.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Attributes.Validations.UploadFileAttribute">
+            <summary>
+            Class UploadFileAttribute.
+            Implements the <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+            </summary>
+            <seealso cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" />
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Attributes.Validations.UploadFileAttribute.AllowedMimeTypes">
+            <summary>
+            Gets the allowed MIME types.
+            </summary>
+            <value>The allowed MIME types.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Attributes.Validations.UploadFileAttribute.FileSizeLimit">
+            <summary>
+            Gets the file size limit.
+            </summary>
+            <value>The file size limit.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Attributes.Validations.UploadFileAttribute.#ctor(System.String,System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Attributes.Validations.UploadFileAttribute"/> class.
+            </summary>
+            <param name="allowedMimeTypes">The allowed MIME types.</param>
+            <param name="fileSizeLimit">The file size limit.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Attributes.Validations.UploadFileAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Validates the specified value with respect to the current validation attribute.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context information about the validation operation.</param>
+            <returns>An instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationResult" /> class.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Constants.ConsumerProducerConstants">
+            <summary>
+            Class ConsumerProducerConstants.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.ConsumerProducerConstants.JSON">
+            <summary>
+            The json
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.ConsumerProducerConstants.MULTIPART">
+            <summary>
+            The multipart
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Constants.EmbeddedResourceConstants">
+            <summary>
+            Class EmbeddedResourceConstants.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.EmbeddedResourceConstants.TOOLKIT_NAME_SPACE">
+            <summary>
+            The toolkit name space
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.EmbeddedResourceConstants.RESOURCE_ASSEMBLY_NAMESPACE">
+            <summary>
+            The resource assembly namespace
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.EmbeddedResourceConstants.SECURITY_ASSEMBLY_NAMESPACE">
+            <summary>
+            The security assembly namespace
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Constants.ResponseDescriptionConstants">
+            <summary>
+            Class ResponseDescriptionConstants.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.ResponseDescriptionConstants.TECHNICAL_ERROR">
+            <summary>
+            The technical error
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.ResponseDescriptionConstants.AUTHORIZATION_FAILED">
+            <summary>
+            The authorization failed
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.ResponseDescriptionConstants.ACCESS_FORBIDDEN">
+            <summary>
+            The access forbidden
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.ResponseDescriptionConstants.INVALID_PARAMETER">
+            <summary>
+            The invalid parameter
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Constants.RouteConstants">
+            <summary>
+            Class RouteConstants.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.RouteConstants.ROUTE_PREFIX_VERSION">
+            <summary>
+            The route prefix version
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.RouteConstants.API_VERSION_FIELD">
+            <summary>
+            The API version field
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Constants.SwaggerSdkConstants">
+            <summary>
+            Class SwaggerSdkConstants.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.SwaggerSdkConstants.ABOUT">
+            <summary>
+            The about
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.SwaggerSdkConstants.SECURITY">
+            <summary>
+            The security
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Constants.SwaggerSdkConstants.COMMON">
+            <summary>
+            The common
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Http.ChallengeOnUnauthorizedResult">
+            <summary>
+            Class AddChallengeOnUnauthorizedResult.
+            Implements the <see cref="T:System.Web.Http.IHttpActionResult" />
+            </summary>
+            <seealso cref="T:System.Web.Http.IHttpActionResult" />
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Common.Http.ChallengeOnUnauthorizedResult.Challenge">
+            <summary>
+            Gets the challenge.
+            </summary>
+            <value>The challenge.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Common.Http.ChallengeOnUnauthorizedResult.InnerResult">
+            <summary>
+            Gets the inner result.
+            </summary>
+            <value>The inner result.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Common.Http.ChallengeOnUnauthorizedResult.ExecuteAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+            <summary>
+            execute as an asynchronous operation.
+            </summary>
+            <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+            <returns>A task that, when completed, contains the <see cref="T:System.Net.Http.HttpResponseMessage" />.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Common.Http.ChallengeOnUnauthorizedResult.#ctor(System.Net.Http.Headers.AuthenticationHeaderValue,System.Web.Http.IHttpActionResult)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Common.Http.ChallengeOnUnauthorizedResult"/> class.
+            </summary>
+            <param name="challenge">The challenge.</param>
+            <param name="innerResult">The inner result.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Http.ResponseActionResult">
+            <summary>
+            Class ResponseActionResult.
+            Implements the <see cref="T:System.Web.Http.IHttpActionResult" />
+            </summary>
+            <seealso cref="T:System.Web.Http.IHttpActionResult" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Http.ResponseActionResult._request">
+            <summary>
+            The request
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Http.ResponseActionResult._statusCode">
+            <summary>
+            The status code
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Http.ResponseActionResult._content">
+            <summary>
+            The content
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Http.ResponseActionResult._formatter">
+            <summary>
+            The formatter
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Http.ResponseActionResult._defaultFormatter">
+            <summary>
+            The default formatter
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Common.Http.ResponseActionResult.#ctor(System.Net.Http.HttpRequestMessage,System.Net.HttpStatusCode,System.Object,System.Net.Http.Formatting.JsonMediaTypeFormatter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Common.Http.ResponseActionResult" /> class.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="statusCode">The status code.</param>
+            <param name="content">The content.</param>
+            <param name="formatter">The formatter.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Common.Http.ResponseActionResult.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            Creates an <see cref="T:System.Net.Http.HttpResponseMessage" /> asynchronously.
+            </summary>
+            <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+            <returns>A task that, when completed, contains the <see cref="T:System.Net.Http.HttpResponseMessage" />.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Common.Validations.ParameterValidationActionFilterAttribute">
+            <summary>
+            Class ParameterValidationActionFilterAttribute.
+            Implements the <see cref="T:System.Web.Http.Filters.ActionFilterAttribute" />
+            </summary>
+            <seealso cref="T:System.Web.Http.Filters.ActionFilterAttribute" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Common.Validations.ParameterValidationActionFilterAttribute._formatter">
+            <summary>
+            The formatter
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Common.Validations.ParameterValidationActionFilterAttribute.#ctor(System.Net.Http.Formatting.JsonMediaTypeFormatter)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Common.Validations.ParameterValidationActionFilterAttribute"/> class.
+            </summary>
+            <param name="formatter">The formatter.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Common.Validations.ParameterValidationActionFilterAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <inheritdoc />
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Common.Validations.ParameterValidationActionFilterAttribute.CreateValidationErrorContent(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Creates the content of the validation error.
+            </summary>
+            <param name="actionContext">The action context.</param>
+            <returns>JArray.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Configurations.Token.TokenConfigurationSection">
+            <inheritdoc />
+            <summary>
+            Class TokenConfigurationSection.
+            </summary>
+            <seealso cref="T:System.Configuration.ConfigurationSection" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenConfigurationSection.SECTION_NAME">
+            <summary>
+            The token section name
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenConfigurationSection.COLLECTION_NAME">
+            <summary>
+            The collection name
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenConfigurationSection.Members">
+            <summary>
+            Gets or sets the members.
+            </summary>
+            <value>
+            The members.
+            </value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement">
+            <inheritdoc />
+            <summary>
+            Class TokenDefinitionElement.
+            </summary>
+            <seealso cref="T:System.Configuration.ConfigurationElement" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.ISSUER">
+            <summary>
+            The issuer
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.INTENDED_AUDIENCE">
+            <summary>
+            The intended audience
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.EXPIRATION_IN_MINUTE">
+            <summary>
+            The expiration in minute
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.IS_BASE_64_ENCODED">
+            <summary>
+            The is base 64 encoded
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.ONE_TIME_USE">
+            <summary>
+            The one time use
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.SIGNATURE">
+            <summary>
+            The signature
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.Issuer">
+            <summary>
+            Gets or sets the issuer.
+            </summary>
+            <value>The issuer.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.IntendedAudience">
+            <summary>
+            Gets or sets the intended audience.
+            </summary>
+            <value>The intended audience.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.ExpirationInMinute">
+            <summary>
+            Gets or sets the expiration in minute.
+            </summary>
+            <value>The expiration in minute.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.IsBase64Encoded">
+            <summary>
+            Gets or sets a value indicating whether this instance is base64 encoded.
+            </summary>
+            <value><c>true</c> if this instance is base64 encoded; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.OneTimeUse">
+            <summary>
+            Gets or sets a value indicating whether [one time use].
+            </summary>
+            <value><c>true</c> if [one time use]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement.Signature">
+            <summary>
+            Gets the signature.
+            </summary>
+            <value>The signature.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Configurations.Token.TokenElement">
+            <inheritdoc />
+            <summary>
+            Class TokenElement.
+            </summary>
+            <seealso cref="T:System.Configuration.ConfigurationElement" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenElement.TOKEN_NAME">
+            <summary>
+            The token name
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenElement.TOKEN_DEFINITION">
+            <summary>
+            The token definition
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenElement.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenElement.Definition">
+            <summary>
+            Gets the definition.
+            </summary>
+            <value>The definition.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection">
+            <inheritdoc />
+            <summary>
+            Class TokenElementCollection.
+            </summary>
+            <seealso cref="T:System.Configuration.ConfigurationElementCollection" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.COLLECTION_ELEMENT_NAME">
+            <summary>
+            The collection element name
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.ElementName">
+            <inheritdoc />
+            <summary>
+            Gets the name used to identify this collection of elements in the configuration file when overridden in a derived class.
+            </summary>
+            <value>The name of the element.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.CreateNewElement">
+            <inheritdoc />
+            <summary>
+            When overridden in a derived class, creates a new <see cref="T:System.Configuration.ConfigurationElement" />.
+            </summary>
+            <returns>A newly created <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <inheritdoc />
+            <summary>
+            Gets the element key for a specified configuration element when overridden in a derived class.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement" /> to return the key for.</param>
+            <returns>An <see cref="T:System.Object" /> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.IsElementName(System.String)">
+            <inheritdoc />
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement" /> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection" />.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>true if the element exists in the collection; otherwise, false. The default is false.</returns>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.CollectionType">
+            <inheritdoc />
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection" />.
+            </summary>
+            <value>The type of the collection.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.Item(System.String)">
+            <summary>
+            Gets the <see cref="T:Net.Web.Api.Sdk.Configurations.Token.TokenElement"/> with the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>TokenElement.</returns>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:Net.Web.Api.Sdk.Configurations.Token.TokenElement"/> with the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>TokenElement.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement">
+            <inheritdoc />
+            <summary>
+            Class TokenSecurityElement.
+            </summary>
+            <seealso cref="T:System.Configuration.ConfigurationElement" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.PASS_PHRASE">
+            <summary>
+            The pass phrase
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.SIGNING_CERTIFICATE">
+            <summary>
+            The signing certificate
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.SIGNING_CERTIFICATE_PASSWORD">
+            <summary>
+            The signing certificate password
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.VALIDATING_CERTIFICATE">
+            <summary>
+            The validating certificate
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.PassPhrase">
+            <summary>
+            Gets or sets the pass phrase.
+            </summary>
+            <value>The pass phrase.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.SigningCertificate">
+            <summary>
+            Gets or sets the signing certificate.
+            </summary>
+            <value>The signing certificate.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.SigningCertificatePassword">
+            <summary>
+            Gets or sets the signing certificate password.
+            </summary>
+            <value>The signing certificate password.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Configurations.Token.TokenSignatureElement.ValidatingCertificate">
+            <summary>
+            Gets or sets the validating certificate.
+            </summary>
+            <value>The validating certificate.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Controllers.Common.SdkController">
+            <summary>
+            Class SdkController.
+            Implements the <see cref="T:System.Web.Http.ApiController" />
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController" />
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Controllers.v1.SdkInformationController">
+            <summary>
+            Class SdkInformationController.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Controllers.v1.SdkInformationController._informationService">
+            <summary>
+            The information service
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkInformationController.#ctor(Net.Web.Api.Sdk.Interfaces.Information.IInformationService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Controllers.v1.SdkInformationController"/> class.
+            </summary>
+            <param name="informationService">The information service.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkInformationController.GetSdkInformations">
+            <summary>
+            Returns the .Net Web API SDK informations.
+            </summary>
+            <returns>IHttpActionResult.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController">
+            <summary>
+            Class SdkTokenController.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController._tokenService">
+            <summary>
+            The token service
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.#ctor(Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController"/> class.
+            </summary>
+            <param name="tokenService">The token service.</param>
+            <exception cref="T:System.ArgumentNullException">tokenService</exception>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.CreateToken(Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest)">
+            <summary>
+            Creates a new JWT Token.
+            </summary>
+            <returns>IHttpActionResult.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.RevokeToken">
+            <summary>
+            Revokes a token passed in the authorization header.
+            </summary>
+            <returns>IHttpActionResult.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.ValidateToken">
+            <summary>
+            Validates a token passed in the authorization header.
+            </summary>
+            <returns>IHttpActionResult.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController">
+            <summary>
+            Class SdkUploadController. This class cannot be inherited.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController._commonService">
+            <summary>
+            The common service
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController.#ctor(Net.Web.Api.Sdk.Interfaces.Common.ICommonService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController"/> class.
+            </summary>
+            <param name="commonService">The common service.</param>
+            <exception cref="T:System.ArgumentNullException">commonService</exception>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController.UploadFile(Net.Web.Api.Sdk.Models.Services.Common.UploadRequest)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="parameters">The parameters.</param>
+            <returns>IHttpActionResult.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerConsumesAttribute">
+            <inheritdoc />
+            <summary>
+            Class SwaggerConsumesAttribute.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerConsumesAttribute.ContentTypes">
+            <summary>
+            Gets the content types.
+            </summary>
+            <value>The content types.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerConsumesAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerConsumesAttribute"/> class.
+            </summary>
+            <param name="contentType">Type of the content.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerConsumesAttribute.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerConsumesAttribute"/> class.
+            </summary>
+            <param name="contentTypes">The content types.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerMethodOrderAttribute">
+            <inheritdoc />
+            <summary>
+            Class SwaggerMethodOrderAttribute.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerMethodOrderAttribute.Order">
+            <summary>
+            Gets the order.
+            </summary>
+            <value>The order.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerMethodOrderAttribute.#ctor(System.Int32)">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:Web.Api.Toolkit.Attributes.Swagger.SwaggerMethodOrderAttribute" /> class.
+            </summary>
+            <param name="order">The order.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerOperationOrderAttribute">
+            <inheritdoc />
+            <summary>
+            Class SwaggerOperationOrderAttribute.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerOperationOrderAttribute.OperationFrom">
+            <summary>
+            Enum OperationFrom
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerOperationOrderAttribute.OperationFrom.Sdk">
+            <summary>
+            The SDK
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerOperationOrderAttribute.OperationFrom.Application">
+            <summary>
+            The application
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerOperationOrderAttribute.From">
+            <summary>
+            Gets or sets from.
+            </summary>
+            <value>From.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerOperationOrderAttribute.OperationTags">
+            <summary>
+            Gets the operation tags.
+            </summary>
+            <value>The operation tags.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerProducesAttribute">
+            <inheritdoc />
+            <summary>
+            Class SwaggerProducesAttribute.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerProducesAttribute.ContentTypes">
+            <summary>
+            Gets the content types.
+            </summary>
+            <value>The content types.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerProducesAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerProducesAttribute"/> class.
+            </summary>
+            <param name="contentType">Type of the content.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerProducesAttribute.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerProducesAttribute"/> class.
+            </summary>
+            <param name="contentTypes">The content types.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerSecurityTypeAttribute">
+            <inheritdoc />
+            <summary>
+            Class SwaggerSecurityTypeAttribute.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerSecurityTypeAttribute.SecurityType">
+            <summary>
+            Gets the type of the security.
+            </summary>
+            <value>The type of the security.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerSecurityTypeAttribute.#ctor(System.String)">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:Web.Api.Toolkit.Attributes.Swagger.SwaggerSecurityTypeAttribute" /> class.
+            </summary>
+            <param name="securityType">Type of the security.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerUploadOperationAttribute">
+            <inheritdoc />
+            <summary>
+            Class SwaggerUploadOperationAttribute.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerUploadOperationAttribute.ParameterType">
+            <summary>
+            Gets the type of the parameter.
+            </summary>
+            <value>The type of the parameter.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerUploadOperationAttribute.#ctor(System.Type)">
+            <inheritdoc />
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerUploadOperationAttribute" /> class.
+            </summary>
+            <param name="parameterType">Type of the parameter.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Constants.SwaggerSecurityTypeConstants">
+            <summary>
+            Class SwaggerSecurityTypeConstants.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Documentation.Constants.SwaggerSecurityTypeConstants.ANONYMOUS">
+            <summary>
+            The anonymous
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Documentation.Constants.SwaggerSecurityTypeConstants.TOKEN_SECURED">
+            <summary>
+            The token secured
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Documentation.Constants.SwaggerSecurityTypeConstants.BASIC_SECURED">
+            <summary>
+            The basic secured
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter">
+            <summary>
+            Class SwaggerOrderingFilter.
+            Implements the <see cref="T:Swashbuckle.Swagger.IDocumentFilter" />
+            </summary>
+            <seealso cref="T:Swashbuckle.Swagger.IDocumentFilter" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.Apply(Swashbuckle.Swagger.SwaggerDocument,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.IApiExplorer)">
+            <summary>
+            Applies the specified swagger document.
+            </summary>
+            <param name="swaggerDoc">The swagger document.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiExplorer">The API explorer.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.GetInvokeMethod(Swashbuckle.Swagger.PathItem,System.String@)">
+            <summary>
+            Gets the invoke method.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="tag">The tag.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.OrderingApply(Swashbuckle.Swagger.SwaggerDocument,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.IApiExplorer)">
+            <summary>
+            Orderings the apply.
+            </summary>
+            <param name="swaggerDoc">The swagger document.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiExplorer">The API explorer.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.GetApiOrder(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the API order.
+            </summary>
+            <param name="apiDescription">The API description.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.ApiOrder">
+            <summary>
+            Class ApiOrder.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.ApiOrder.Order">
+            <summary>
+            Gets or sets the order.
+            </summary>
+            <value>The order.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.ApiOrder.PathKey">
+            <summary>
+            Gets or sets the path key.
+            </summary>
+            <value>The path key.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.ApiOrder.PathValue">
+            <summary>
+            Gets or sets the path value.
+            </summary>
+            <value>The path value.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter.ApiOrder.OperationName">
+            <summary>
+            Gets or sets the name of the operation.
+            </summary>
+            <value>The name of the operation.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.SwaggerConsumesFilter">
+            <inheritdoc />
+            <summary>
+            Class SwaggerConsumesFilter.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerConsumesFilter.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <inheritdoc />
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiDescription">The API description.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.SwaggerMethodOrderingFilter">
+            <summary>
+            Class SwaggerMethodOrderingFilter.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter" />
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.SwaggerOperationOrderingFilter">
+            <summary>
+            Class SwaggerOperationOrderingFilter.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerOperationOrderingFilter.Apply(Swashbuckle.Swagger.SwaggerDocument,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.IApiExplorer)">
+            <summary>
+            Applies the specified swagger document.
+            </summary>
+            <param name="swaggerDoc">The swagger document.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiExplorer">The API explorer.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerOperationOrderingFilter.GetOperationOrder(Swashbuckle.Swagger.SwaggerDocument,System.Web.Http.Description.IApiExplorer)">
+            <summary>
+            Gets the operation order.
+            </summary>
+            <param name="swaggerDoc">The swagger document.</param>
+            <param name="apiExplorer">The API explorer.</param>
+            <returns>System.String[].</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerOperationOrderingFilter.ProcessItemMethodOrdering(System.Collections.Generic.IDictionary{System.String,Swashbuckle.Swagger.PathItem},System.Web.Http.Description.IApiExplorer)">
+            <summary>
+            Processes the item method ordering.
+            </summary>
+            <param name="group">The group.</param>
+            <param name="apiExplorer">The API explorer.</param>
+            <returns>IDictionary&lt;System.String, PathItem&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerOperationOrderingFilter.ProcessMethodOrdering(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.IDictionary{System.String,Swashbuckle.Swagger.PathItem}},System.Web.Http.Description.IApiExplorer)">
+            <summary>
+            Processes the method ordering.
+            </summary>
+            <param name="groups">The groups.</param>
+            <param name="apiExplorer">The API explorer.</param>
+            <returns>Dictionary&lt;System.Int32, IDictionary&lt;System.String, PathItem&gt;&gt;.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.SwaggerProducesFilter">
+            <inheritdoc />
+            <summary>
+            Class SwaggerProducesFilter.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerProducesFilter.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <inheritdoc />
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiDescription">The API description.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.SwaggerSecurityTypeAttributeFilter">
+            <inheritdoc />
+            <summary>
+            Class SwaggerSecurityTypeAttributeFilter.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerSecurityTypeAttributeFilter.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <inheritdoc />
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiDescription">The API description.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerSecurityTypeAttributeFilter.GetSecurityType(System.Web.Http.Description.ApiDescription)">
+            <summary>
+            Gets the type of the security.
+            </summary>
+            <param name="apiDescription">The API description.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerSecurityTypeAttributeFilter.GetIntendedAudiences(System.Object)">
+            <summary>
+            Gets the intended audiences.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Documentation.Filters.SwaggerUploadOperationFilter">
+            <inheritdoc />
+            <summary>
+            Class SwaggerUploadOperationFilter.
+            </summary>
+            <seealso cref="T:Web.Api.Toolkit.Swashbuckle.Swagger.IOperationFilter" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Documentation.Filters.SwaggerUploadOperationFilter.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <inheritdoc />
+            <summary>
+            Applies the specified operation.
+            </summary>
+            <param name="operation">The operation.</param>
+            <param name="schemaRegistry">The schema registry.</param>
+            <param name="apiDescription">The API description.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Extensions.ClaimExtensions">
+            <summary>
+            Class ClaimExtensions.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.ClaimExtensions.GetClaimByName(System.Collections.Generic.IList{System.Security.Claims.Claim},System.String)">
+            <summary>
+            Gets the name of the claim by.
+            </summary>
+            <param name="claims">The claims.</param>
+            <param name="name">The name.</param>
+            <returns>Claim.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.ClaimExtensions.ToClaimDictionary(System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Boolean)">
+            <summary>
+            To the claim dictionary.
+            </summary>
+            <param name="claims">The claims.</param>
+            <param name="shortNameOnly">if set to <c>true</c> [short name only].</param>
+            <returns>Dictionary&lt;System.String, System.String&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.ClaimExtensions.ShortName(System.String,System.Boolean)">
+            <summary>
+            Shorts the name.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="shortNameOnly">if set to <c>true</c> [short name only].</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Extensions.ControllerExtensions">
+            <summary>
+            Class ControllerExtensions.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.ControllerExtensions.GetClaims(System.Web.Http.ApiController)">
+            <summary>
+            Gets the claims.
+            </summary>
+            <param name="controller">The controller.</param>
+            <returns>IList&lt;Claim&gt;.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Extensions.HttpAuthenticationChallengeContextExtensions">
+            <summary>
+            Class HttpAuthenticationChallengeContextExtensions.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.HttpAuthenticationChallengeContextExtensions.ChallengeWith(System.Web.Http.Filters.HttpAuthenticationChallengeContext,System.String)">
+            <summary>
+            Challenges the with.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="scheme">The scheme.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.HttpAuthenticationChallengeContextExtensions.ChallengeWith(System.Web.Http.Filters.HttpAuthenticationChallengeContext,System.String,System.String)">
+            <summary>
+            Challenges the with.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="scheme">The scheme.</param>
+            <param name="parameter">The parameter.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.HttpAuthenticationChallengeContextExtensions.ChallengeWith(System.Web.Http.Filters.HttpAuthenticationChallengeContext,System.Net.Http.Headers.AuthenticationHeaderValue)">
+            <summary>
+            Challenges the with.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="challenge">The challenge.</param>
+            <exception cref="T:System.ArgumentNullException">context</exception>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions">
+            <summary>
+            Class JwtTokenExtensions.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.GetToken(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Gets the token.
+            </summary>
+            <param name="actionContext">The action context.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.GetToken(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            Gets the token.
+            </summary>
+            <param name="httpRequest">The HTTP request.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.GetToken(System.Web.Http.Controllers.HttpActionContext,System.IdentityModel.Tokens.Jwt.JwtSecurityToken@)">
+            <summary>
+            Gets the token.
+            </summary>
+            <param name="actionContext">The action context.</param>
+            <param name="securityToken">The security token.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.GetToken(System.Net.Http.HttpRequestMessage,System.IdentityModel.Tokens.Jwt.JwtSecurityToken@)">
+            <summary>
+            Gets the token.
+            </summary>
+            <param name="httpRequest">The HTTP request.</param>
+            <param name="securityToken">The security token.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.GetToken(System.String,System.IdentityModel.Tokens.Jwt.JwtSecurityToken@)">
+            <summary>
+            Gets the token.
+            </summary>
+            <param name="rawToken">The raw token.</param>
+            <param name="securityToken">The security token.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.GetExpirationDate(System.String)">
+            <summary>
+            Gets the expiration date.
+            </summary>
+            <param name="token">The token.</param>
+            <returns>DateTime.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.IsTokenOneTimeUse(System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Determines whether [is token one time use] [the specified claims].
+            </summary>
+            <param name="claims">The claims.</param>
+            <returns><c>true</c> if [is token one time use] [the specified claims]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.JwtTokenExtensions.GetToken(System.Net.Http.Headers.HttpRequestHeaders,System.IdentityModel.Tokens.Jwt.JwtSecurityToken@)">
+            <summary>
+            Gets the token.
+            </summary>
+            <param name="headers">The headers.</param>
+            <param name="securityToken">The security token.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Extensions.ListExtensions">
+            <summary>
+            Class ListExtensions.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.ListExtensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">
+            <summary>
+            Distincts the by.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="TKey">The type of the t key.</typeparam>
+            <param name="items">The items.</param>
+            <param name="property">The property.</param>
+            <returns>IEnumerable&lt;T&gt;.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Extensions.StringExtensions">
+            <summary>
+            Class StringExtensions.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.StringExtensions.ToSecuredEncoded64Padding(System.String)">
+            <summary>
+            To the secured encoded64 padding.
+            </summary>
+            <param name="str">The string.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Extensions.StringExtensions.FromSecuredEncoded64Padding(System.String)">
+            <summary>
+            Froms the secured encoded64 padding.
+            </summary>
+            <param name="str">The string.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Implementations.Common.CommonService">
+            <summary>
+            Class CommonService.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Interfaces.Common.ICommonService" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Interfaces.Common.ICommonService" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Common.CommonService.UPLOAD_DIRECTORY_NAME">
+            <summary>
+            The upload directory name
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Common.CommonService.UploadFile(System.Byte[],System.String)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="content">The content.</param>
+            <param name="fileName">Name of the file.</param>
+            <returns>Uri.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Common.CommonService.GetUniqueFileName(System.String)">
+            <summary>
+            Gets the name of the unique file.
+            </summary>
+            <param name="fullFileName">Full name of the file.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Implementations.Information.InformationService">
+            <summary>
+            Class InformationService.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Interfaces.Information.IInformationService" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Interfaces.Information.IInformationService" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Information.InformationService.PACKAGE_INFORMATION_FILE_NAME">
+            <summary>
+            The package information file name
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Information.InformationService.NUGET_INFORMATION_FILE_NAME">
+            <summary>
+            The nuget information file name
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Information.InformationService._tokenService">
+            <summary>
+            The token service
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Information.InformationService.#ctor(Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Implementations.Information.InformationService"/> class.
+            </summary>
+            <param name="tokenService">The token service.</param>
+            <exception cref="T:System.ArgumentNullException">tokenService</exception>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Information.InformationService.GetSdkInformations">
+            <summary>
+            Gets the SDK informations.
+            </summary>
+            <returns>dynamic.</returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Information.InformationService.GetAssemblyInformations">
+            <summary>
+            Gets the assembly informations.
+            </summary>
+            <returns>dynamic.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService">
+            <inheritdoc />
+            <summary>
+            Class JwtTokenService.
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.ROOT_PATH">
+            <summary>
+            The root path
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.TOKEN_CONFIG_FILE_PATTERN">
+            <summary>
+            The token config file pattern
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.TOKEN_DATA_COLLECTION">
+            <summary>
+            The token data collection
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.Tokens">
+            <inheritdoc />
+            <summary>
+            Gets or sets the tokens.
+            </summary>
+            <value>The tokens.</value>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService._tokenDataBase">
+            <summary>
+            The token data base
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService"/> class.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.CreateToken(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+            <summary>
+            Creates the token.
+            </summary>
+            <param name="tokenName">Name of the token.</param>
+            <param name="identityName">Name of the identity.</param>
+            <param name="customClaims">The custom claims.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.GetTokenValidationParameters(System.Boolean,System.String,System.String)">
+            <inheritdoc />
+            <summary>
+            Gets the token validation parameters.
+            </summary>
+            <param name="validateExipration">if set to <c>true</c> [validate exipration].</param>
+            <param name="issuers">The issuers.</param>
+            <param name="audiences">The audiences.</param>
+            <returns>TokenValidationParameters.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.GetTokenPayload(System.Web.Http.Controllers.HttpActionContext)">
+            <inheritdoc />
+            <summary>
+            Gets the token payload.
+            </summary>
+            <param name="context">The context.</param>
+            <returns>Dictionary&lt;System.String, System.String&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.GetIdentityPayload(System.Web.Http.Controllers.HttpActionContext)">
+            <inheritdoc />
+            <summary>
+            Gets the identity payload.
+            </summary>
+            <param name="context">The context.</param>
+            <returns>Dictionary&lt;System.String, System.String&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.IsTokenRevoked(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Determines whether [is token revoked] [the specified token].
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+            <returns><c>true</c> if [is token revoked] [the specified token]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.IsTokenUsed(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Determines whether [is token used] [the specified token].
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+            <returns><c>true</c> if [is token used] [the specified token]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.RevokeToken(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Revokes the token.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.MarkTokenAsUsed(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Marks the token as used.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.CleanupTokenDatabase">
+            <summary>
+            Cleanups the token database.
+            </summary>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.RevokeToken(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService" /> class.
+            </summary>
+            <param name="token">The token.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.MarkTokenAsUsed(System.String)">
+            <summary>
+            Marks the token as used.
+            </summary>
+            <param name="token">The token.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.GetTokenState(System.String,System.Collections.Generic.List{System.Security.Claims.Claim},System.Boolean@,System.Boolean@)">
+            <summary>
+            Gets the state of the token.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+            <param name="isRevoked">if set to <c>true</c> [is revoked].</param>
+            <param name="isUsed">if set to <c>true</c> [is used].</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.GetAllSecurityKeys">
+            <summary>
+            Gets all security keys.
+            </summary>
+            <returns>IEnumerable&lt;SecurityKey&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.GetTokenSubject(Net.Web.Api.Sdk.Models.Token.JwtTokenModel,System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">
+            <summary>
+            Gets the token subject.
+            </summary>
+            <param name="definition">The definition.</param>
+            <param name="identityName">Name of the identity.</param>
+            <param name="customClaims">The custom claims.</param>
+            <returns>ClaimsIdentity.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.FormatToken(System.String,Net.Web.Api.Sdk.Models.Token.JwtTokenModel)">
+            <summary>
+            Formats the token.
+            </summary>
+            <param name="generatedToken">The generated token.</param>
+            <param name="definition">The definition.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.LoadTokenList(Net.Web.Api.Sdk.Configurations.Token.TokenConfigurationSection)">
+            <summary>
+            Loads the token list.
+            </summary>
+            <param name="tokenConfigurationSection">The token configuration section.</param>
+            <returns>Dictionary&lt;System.String, ApiTokenModel&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.LoadAllTokens">
+            <summary>
+            Loads all tokens.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Implementations.Token.JwtTokenService.SetupTokenDatabase">
+            <summary>
+            Setups the token database.
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions">
+            <summary>
+            Class HttpConfigurationExtensions.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.KIT_SWAGGER_CONFIGURATION">
+            <summary>
+            The kit swagger configuration
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.KIT_DEFAULT_TOKEN_CONFIGURATION">
+            <summary>
+            The kit default token configuration
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.KIT_DOCUMENTATION">
+            <summary>
+            The kit documentation
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.KIT_INDEX">
+            <summary>
+            The kit index
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.RegisterWebApi(System.Web.Http.HttpConfiguration,System.Net.Http.Formatting.JsonMediaTypeFormatter)">
+            <summary>
+            Registers the web API.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <param name="formatter">The formatter.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.UnRegisterWebApi(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Uns the register web API.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.SetupInjection(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Setups the injection.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.SetupApi(System.Web.Http.HttpConfiguration,System.Net.Http.Formatting.JsonMediaTypeFormatter)">
+            <summary>
+            Setups the API.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <param name="formatter">The formatter.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.SetupFormatters(System.Web.Http.HttpConfiguration,System.Net.Http.Formatting.JsonMediaTypeFormatter)">
+            <summary>
+            Setups the formatters.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <param name="formatter">The formatter.</param>
+            <returns>JsonMediaTypeFormatter.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.SetupVersioning(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Setups the versioning.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <returns>VersionedApiExplorer.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.SetupSecurity(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Setups the security.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.SetupDocumentation(System.Web.Http.HttpConfiguration,Microsoft.Web.Http.Description.VersionedApiExplorer)">
+            <summary>
+            Setups the documentation.
+            </summary>
+            <param name="configuration">The configuration.</param>
+            <param name="apiExplorer">The API explorer.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Initialization.HttpConfigurationExtensions.ExtractTextResource(System.Reflection.Assembly,System.String,System.String,System.String)">
+            <summary>
+            Extracts the text resource.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <param name="nameSpace">The name space.</param>
+            <param name="source">The source.</param>
+            <param name="destin">The destin.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Attributes.InjectInterfaceServiceAttribute">
+            <summary>
+            Class InjectInterfaceServiceAttribute.
+            Implements the <see cref="T:System.Attribute" />
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Attributes.InjectServiceCustomAttribute">
+            <summary>
+            Class InjectServiceCustomAttribute.
+            Implements the <see cref="T:System.Attribute" />
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot">
+            <inheritdoc />
+            <summary>
+            Class WindsorCompositionRoot.
+            </summary>
+            <seealso cref="T:System.Web.Http.Dispatcher.IHttpControllerActivator" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot._container">
+            <summary>
+            The container
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot"/> class.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot.Create(System.Net.Http.HttpRequestMessage,System.Web.Http.Controllers.HttpControllerDescriptor,System.Type)">
+            <inheritdoc />
+            <summary>
+            Creates an <see cref="T:System.Web.Http.Controllers.IHttpController" /> object.
+            </summary>
+            <param name="request">The message request.</param>
+            <param name="controllerDescriptor">The HTTP controller descriptor.</param>
+            <param name="controllerType">The type of the controller.</param>
+            <returns>An <see cref="T:System.Web.Http.Controllers.IHttpController" /> object.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot.Release">
+            <inheritdoc />
+            <summary>
+            Class Release. This class cannot be inherited.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot.Release._release">
+            <summary>
+            The release
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot.Release.#ctor(System.Action)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot.Release"/> class.
+            </summary>
+            <param name="release">The release.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Compositions.WindsorCompositionRoot.Release.Dispose">
+            <inheritdoc />
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer">
+            <summary>
+            Class InjectionContainer. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer._lazy">
+            <summary>
+            The lazy
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer.Instance">
+            <summary>
+            Gets the instance.
+            </summary>
+            <value>
+            The instance.
+            </value>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer._container">
+            <summary>
+            The container
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer"/> class from being created.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer.SetContainer(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Sets the container.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer.GetService``1">
+            <summary>
+            Gets the service.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>T.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Containers.InjectionContainer.DisposeContainer">
+            <summary>
+            Disposes the container.
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Installers.ControllerInstaller">
+            <inheritdoc />
+            <summary>
+            Class ControllerInstaller.
+            </summary>
+            <seealso cref="T:Castle.MicroKernel.Registration.IWindsorInstaller" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Installers.ControllerInstaller.Install(Castle.Windsor.IWindsorContainer,Castle.MicroKernel.SubSystems.Configuration.IConfigurationStore)">
+            <inheritdoc />
+            <summary>
+            Performs the installation in the <see cref="T:Castle.Windsor.IWindsorContainer" />.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="store">The configuration store.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller">
+            <inheritdoc />
+            <summary>
+            Class ServiceInstaller.
+            </summary>
+            <seealso cref="T:Castle.MicroKernel.Registration.IWindsorInstaller" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller._assemblyNamePrefix">
+            <summary>
+            The assembly name prefix
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller"/> class.
+            </summary>
+            <param name="assemblyNamePrefix">The assembly name prefix.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller.Install(Castle.Windsor.IWindsorContainer,Castle.MicroKernel.SubSystems.Configuration.IConfigurationStore)">
+            <inheritdoc />
+            <summary>
+            Performs the installation in the <see cref="T:Castle.Windsor.IWindsorContainer" />.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="store">The configuration store.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller.GetInterfaces(System.Type)">
+            <summary>
+            Gets the interfaces.
+            </summary>
+            <param name="class">The class.</param>
+            <returns>IList&lt;Type&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller.GetRegistrationList(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+            <summary>
+            Gets the registration list.
+            </summary>
+            <param name="assemblies">The assemblies.</param>
+            <returns>Dictionary&lt;Type, Type&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller.IsCustomService(System.Type)">
+            <summary>
+            Determines whether [is custom service] [the specified class].
+            </summary>
+            <param name="class">The class.</param>
+            <returns><c>true</c> if [is custom service] [the specified class]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Installers.ServiceInstaller.GetAssemblyList(Castle.MicroKernel.Registration.FromAssemblyDescriptor)">
+            <summary>
+            Gets the assembly list.
+            </summary>
+            <param name="assemblyDescriptor">The assembly descriptor.</param>
+            <returns>IList&lt;Assembly&gt;.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Resolvers.WindsorDependencyResolver">
+            <inheritdoc />
+            <summary>
+            Class WindsorDependencyResolver.
+            </summary>
+            <seealso cref="T:System.Web.Http.Dependencies.IDependencyResolver" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Resolvers.WindsorDependencyResolver.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Injection.Resolvers.WindsorDependencyResolver"/> class.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Resolvers.WindsorDependencyResolver.BeginScope">
+            <inheritdoc />
+            <summary>
+            Starts a resolution scope.
+            </summary>
+            <returns>The dependency scope.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Resolvers.WindsorDependencyResolver.GetService(System.Type)">
+            <inheritdoc />
+            <summary>
+            Retrieves a service from the scope.
+            </summary>
+            <param name="serviceType">The service to be retrieved.</param>
+            <returns>The retrieved service.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Resolvers.WindsorDependencyResolver.GetServices(System.Type)">
+            <inheritdoc />
+            <summary>
+            Retrieves a collection of services from the scope.
+            </summary>
+            <param name="serviceType">The collection of services to be retrieved.</param>
+            <returns>The retrieved collection of services.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Resolvers.WindsorDependencyResolver.Dispose">
+            <inheritdoc />
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope">
+            <inheritdoc />
+            <summary>
+            Class WindsorDependencyScope.
+            </summary>
+            <seealso cref="T:System.Web.Http.Dependencies.IDependencyScope" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope._container">
+            <summary>
+            The container
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope._scope">
+            <summary>
+            The scope
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope.#ctor(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope"/> class.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope.GetService(System.Type)">
+            <inheritdoc />
+            <summary>
+            Retrieves a service from the scope.
+            </summary>
+            <param name="serviceType">The service to be retrieved.</param>
+            <returns>The retrieved service.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope.GetServices(System.Type)">
+            <inheritdoc />
+            <summary>
+            Retrieves a collection of services from the scope.
+            </summary>
+            <param name="serviceType">The collection of services to be retrieved.</param>
+            <returns>The retrieved collection of services.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Injection.Scopes.WindsorDependencyScope.Dispose">
+            <inheritdoc />
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Interfaces.Common.ICommonService">
+            <summary>
+            Interface ICommonService
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Common.ICommonService.UploadFile(System.Byte[],System.String)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="content">The content.</param>
+            <param name="fileName">Name of the file.</param>
+            <returns>Uri.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Interfaces.Information.IInformationService">
+            <summary>
+            Interface IInformationService
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Information.IInformationService.GetSdkInformations">
+            <summary>
+            Gets the SDK informations.
+            </summary>
+            <returns>dynamic.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService">
+            <summary>
+            Interface IJwtTokenService
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.Tokens">
+            <summary>
+            Gets the tokens.
+            </summary>
+            <value>The tokens.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.CreateToken(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Creates the token.
+            </summary>
+            <param name="tokenName">Name of the token.</param>
+            <param name="identityName">Name of the identity.</param>
+            <param name="customClaims">The custom claims.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.GetTokenValidationParameters(System.Boolean,System.String,System.String)">
+            <summary>
+            Gets the token validation parameters.
+            </summary>
+            <param name="validateExipration">if set to <c>true</c> [validate exipration].</param>
+            <param name="issuers">The issuers.</param>
+            <param name="audiences">The audiences.</param>
+            <returns>TokenValidationParameters.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.GetTokenPayload(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Gets the token payload.
+            </summary>
+            <param name="context">The context.</param>
+            <returns>Dictionary&lt;System.String, System.String&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.GetIdentityPayload(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Gets the identity payload.
+            </summary>
+            <param name="context">The context.</param>
+            <returns>Dictionary&lt;System.String, System.String&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.IsTokenRevoked(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Determines whether [is token revoked] [the specified token].
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+            <returns><c>true</c> if [is token revoked] [the specified token]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.IsTokenUsed(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Determines whether [is token used] [the specified token].
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+            <returns><c>true</c> if [is token used] [the specified token]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.RevokeToken(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Revokes the token.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.MarkTokenAsUsed(System.String,System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            Marks the token as used.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="claims">The claims.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService.CleanupTokenDatabase">
+            <summary>
+            Cleanups the token database.
+            </summary>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Services.Common.UploadRequest">
+            <summary>
+            Class UploadRequest.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Services.Common.UploadRequest.FileInformation">
+            <summary>
+            Gets or sets the file information.
+            </summary>
+            <value>The file information.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest">
+            <summary>
+            Class CreateTokenRequest.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest.Name">
+            <summary>
+            The token name as defined in the token configuration files.
+                - Case insensitive.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest.UniqueId">
+            <summary>
+            The token unique identifier that will be used as identity name.
+                - User name,
+                - Email address,
+                - Any other unique identifiers.
+            </summary>
+            <value>The unique identifier.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest.Payload">
+            <summary>
+            The token payload.
+                - keys cannot be empty.
+                - keys are to be unique.
+                - values cannot be empty.
+            </summary>
+            <value>The payload.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult">
+            <summary>
+            Class CreateTokenResult.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult.AccessToken">
+            <summary>
+            The JWT token created.
+            </summary>
+            <value>The access token.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult"/> class.
+            </summary>
+            <param name="token">The token.</param>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.nbf">
+            <summary>
+            The token will not be valid before a give utc date/time
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.exp">
+            <summary>
+            The token expiration utc date/time
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.iat">
+            <summary>
+            The token issue utc date/time
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.iss">
+            <summary>
+            The token issuer
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.aud">
+            <summary>
+            The token audince
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.jti">
+            <summary>
+            The token unique identifier
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.exm">
+            <summary>
+            The the token expiration in minutes
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.tn">
+            <summary>
+            The token name
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.otu">
+            <summary>
+            One time use token
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Token.TokenSecurityTypes">
+            <summary>
+            Enum TokenSecurityType
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenSecurityTypes.PassPhrase">
+            <summary>
+            The pass phrase
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenSecurityTypes.Certificate">
+            <summary>
+            The certificate
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Token.TokenSecurityAlgorithms">
+            <summary>
+            Enum TokenSecurityAlgorithms
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenSecurityAlgorithms.HmacSha256">
+            <summary>
+            The hmac sha256
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenSecurityAlgorithms.HmacSha384">
+            <summary>
+            The hmac sha384
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenSecurityAlgorithms.HmacSha512">
+            <summary>
+            The hmac sha512
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Token.TokenStatus">
+            <summary>
+            Enum TokenStatus
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenStatus.AlreadyUsed">
+            <summary>
+            The already used
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenStatus.Expired">
+            <summary>
+            The expired
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenStatus.Invalid">
+            <summary>
+            The invalid
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenStatus.InvalidAudience">
+            <summary>
+            The invalid audience
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenStatus.TokenRequired">
+            <summary>
+            The required
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenStatus.Revoked">
+            <summary>
+            The revoked
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.TokenStatus.Valid">
+            <summary>
+            The valid
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Token.ITokenCredential">
+            <summary>
+            Interface ITokenCredential
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.ITokenCredential.SecurityKey">
+            <summary>
+            Gets or sets the security key.
+            </summary>
+            <value>The security key.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.ITokenCredential.SigningCredentials">
+            <summary>
+            Gets or sets the signing credentials.
+            </summary>
+            <value>The signing credentials.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Token.JwtTokenModel">
+            <summary>
+            Class JwtTokenModel.
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.URN_PATTERN">
+            <summary>
+            The urn pattern
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenName">
+            <summary>
+            The token name:
+                - Case insensitive.
+            </summary>
+            <value>The name of the token.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenIssuer">
+            <summary>
+            The token Issuer:
+                - URL Format.
+            </summary>
+            <value>The token issuer.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenIntendedAudience">
+            <summary>
+            The token intended audience:
+                - URN Format.
+            </summary>
+            <value>The token intended audience.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenExpirationInMinutes">
+            <summary>
+            The token expiration in minutes.
+            </summary>
+            <value>The token expiration in minutes.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.IsTokenBase64Encoded">
+            <summary>
+            Specifies if the resulting token will be base 64 encoded:
+                - In order to use the token not only in the request header but also as request parameters:
+                    - If the result encoded token is padded with = signs, these signs will bew replace by [EQUAL]
+            </summary>
+            <value><c>true</c> if this instance is token base64 encoded; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.OneTimeUse">
+            <summary>
+            Gets a value indicating whether [one time use].
+            </summary>
+            <value><c>true</c> if [one time use]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenSecurityType">
+            <summary>
+            The token security type:
+                - PassPhrase
+                - Certificate
+            </summary>
+            <value>The type of the token security.</value>       
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenSecurityAlgorithm">
+            <summary>
+            The token security algorithm.
+            </summary>
+            <value>The token security algorithm.</value>        
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.SigningTokenCredential">
+            <summary>
+            The signing token credential.
+            </summary>
+            <value>The signing token credential.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.ValidatingTokenCredential">
+            <summary>
+            The validating token credential.
+            </summary>
+            <value>The validating token credential.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenCertificateAlgorithm">
+            <summary>
+            Token certificate algorithm.
+            </summary>
+            <value>The token certificate algorithm.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.CertificateAlgorithm">
+            <summary>
+            The certificate algorithm.
+            </summary>
+            <value>The certificate algorithm.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.ShouldSerializeTokenSecurityAlgorithm">
+            <summary>
+            Shoulds the serialize token security algorithm.
+            </summary>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.ShouldSerializeTokenCertificateAlgorithm">
+            <summary>
+            Shoulds the serialize token certificate algorithm.
+            </summary>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.ShouldSerializeCertificateAlgorithm">
+            <summary>
+            Shoulds the serialize certificate algorithm.
+            </summary>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenCredential">
+            <inheritdoc />
+            <summary>
+            Class TokenCredential.
+            </summary>
+            <seealso cref="T:Dot.Net.Web.Api.Sdk.Models.Tokens.Interfaces.ITokenCredential" />
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenCredential.SecurityKey">
+            <inheritdoc />
+            <summary>
+            Gets or sets the security key.
+            </summary>
+            <value>The security key.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.TokenCredential.SigningCredentials">
+            <inheritdoc />
+            <summary>
+            Gets or sets the signing credentials.
+            </summary>
+            <value>The signing credentials.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.#ctor(System.String,Net.Web.Api.Sdk.Configurations.Token.TokenDefinitionElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Models.Token.JwtTokenModel"/> class.
+            </summary>
+            <param name="tokenName">Name of the token.</param>
+            <param name="definition">The definition.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException">ValidatingCertificate</exception>
+            <exception cref="T:System.IO.FileNotFoundException"></exception>
+            <exception cref="T:System.IO.FileNotFoundException"></exception>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.SearchCertificate(System.String)">
+            <summary>
+            Searches the certificate.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.SetPassPhraseSignature(System.String)">
+            <summary>
+            Sets the pass phrase signature.
+            </summary>
+            <param name="passPhrase">The pass phrase.</param>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.GetCertificateAlgorithm(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Gets the certificate algorithm.
+            </summary>
+            <param name="certificate">The certificate.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Models.Token.JwtTokenModel.SetCertificateSignature(System.Byte[],System.Byte[],System.String)">
+            <summary>
+            Sets the certificate signature.
+            </summary>
+            <param name="validatingContent">Content of the validating.</param>
+            <param name="signingContent">Content of the signing.</param>
+            <param name="signingCertificatePassword">The signing certificate password.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked">
+            <summary>
+            Class JwtTokenUsedOrRevoked.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.Token">
+            <summary>
+            Gets or sets the token.
+            </summary>
+            <value>The token.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.IsUsed">
+            <summary>
+            Gets or sets a value indicating whether this instance is used.
+            </summary>
+            <value><c>true</c> if this instance is used; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.IsRevoked">
+            <summary>
+            Gets or sets a value indicating whether this instance is revoked.
+            </summary>
+            <value><c>true</c> if this instance is revoked; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.RevocationDate">
+            <summary>
+            Gets or sets the revocation date.
+            </summary>
+            <value>The revocation date.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.UsedDate">
+            <summary>
+            Gets or sets the used date.
+            </summary>
+            <value>The used date.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.ExpirationDate">
+            <summary>
+            Gets or sets the expiration date.
+            </summary>
+            <value>The expiration date.</value>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.FieldRequiredText">
+            <summary>
+              Looks up a localized string similar to The field {0} is required..
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.FileSizeLimitReachedText">
+            <summary>
+              Looks up a localized string similar to The file size {0} exceeds the authorized limit of {1}..
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.License">
+            <summary>
+              Looks up a localized string similar to BSD-2-Clause OR MIT.
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.MimeTypeNotAllowedText">
+            <summary>
+              Looks up a localized string similar to The {0} field contains a media type &apos;{1}&apos; that is not allowed..
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.TokenNameNotFound">
+            <summary>
+              Looks up a localized string similar to The token name &apos;{0}&apos; was not found..
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.TokenPayloadDuplicatedKeys">
+            <summary>
+              Looks up a localized string similar to The following token payload keys are duplicated: {0}..
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.TokenPayloadEmptyKeyNoAllowed">
+            <summary>
+              Looks up a localized string similar to The token payload keys are not allowed to be empty..
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.TokenPayloadEmptyValuesAreNotAllowed">
+            <summary>
+              Looks up a localized string similar to The token payload values are not allowed to be empty..
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Properties.Resources.TokenPayloadReservedKeys">
+            <summary>
+              Looks up a localized string similar to The following token payload keys are reserved: {0}..
+            </summary>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute">
+            <summary>
+            Class BasicAuthorizeAttribute.
+            Implements the <see cref="T:System.Attribute" />
+            Implements the <see cref="T:System.Web.Http.Filters.IAuthenticationFilter" />
+            </summary>
+            <seealso cref="T:System.Attribute" />
+            <seealso cref="T:System.Web.Http.Filters.IAuthenticationFilter" />
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.AUTHORIZATION_BASIC">
+            <summary>
+            The authorization basic
+            </summary>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.REALM">
+            <summary>
+            The realm
+            </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.EnableChallenge">
+            <summary>
+            Gets or sets a value indicating whether [enable challenge].
+            </summary>
+            <value><c>true</c> if [enable challenge]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.Realm">
+            <summary>
+            Gets or sets the realm.
+            </summary>
+            <value>The realm.</value>
+        </member>
+        <member name="F:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute._defaultFormatter">
+            <summary>
+            The default formatter
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.AuthenticateAsync(System.String,System.String,System.Threading.CancellationToken,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Authenticates the asynchronous.
+            </summary>
+            <param name="userName">Name of the user.</param>
+            <param name="password">The password.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <param name="authenticationResult">The authentication result.</param>
+            <returns>Task&lt;IPrincipal&gt;.</returns>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.AllowMultiple">
+            <inheritdoc />
+            <summary>
+            Gets or sets a value indicating whether more than one instance of the indicated attribute can be specified for a single program element.
+            </summary>
+            <value><c>true</c> if [allow multiple]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.AuthenticateAsync(System.Web.Http.Filters.HttpAuthenticationContext,System.Threading.CancellationToken)">
+            <summary>
+            authenticate as an asynchronous operation.
+            </summary>
+            <param name="context">The authentication context.</param>
+            <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+            <returns>A Task that will perform authentication.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.ChallengeAsync(System.Web.Http.Filters.HttpAuthenticationChallengeContext,System.Threading.CancellationToken)">
+            <summary>
+            Challenges the asynchronous.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.ExtractUserNameAndPassword(System.String)">
+            <summary>
+            Extracts the user name and password.
+            </summary>
+            <param name="authorizationParameter">The authorization parameter.</param>
+            <returns>TupleModel&lt;System.String, System.String&gt;.</returns>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Attributes.BasicAuthorizeAttribute.Challenge(System.Web.Http.Filters.HttpAuthenticationChallengeContext)">
+            <summary>
+            Challenges the specified context.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute">
+            <summary>
+            Class TokenAuthorizeAttribute.
+            Implements the <see cref="T:System.Web.Http.AuthorizeAttribute" />
+            </summary>
+            <seealso cref="T:System.Web.Http.AuthorizeAttribute" />
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute.Issuers">
+            <summary>
+            Gets or sets the issuers.
+            </summary>
+            <value>The issuers.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute.IntendedAudiences">
+            <summary>
+            Gets or sets the intended audiences.
+            </summary>
+            <value>The intended audiences.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute.ValidateExpiration">
+            <summary>
+            Gets or sets a value indicating whether [validate expiration].
+            </summary>
+            <value><c>true</c> if [validate expiration]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute.TokenValidatingName">
+            <summary>
+            Gets or sets the name of the token validating.
+            </summary>
+            <value>The name of the token validating.</value>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Attributes.TokenAuthorizeAttribute.OnAuthorizationAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)">
+            <summary>
+            Called when [authorization asynchronous].
+            </summary>
+            <param name="actionContext">The action context.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="T:Net.Web.Api.Sdk.Security.Handlers.JwtTokenHandler">
+            <inheritdoc />
+            <summary>
+            Class JwtTokenHandler.
+            </summary>
+            <seealso cref="T:System.Net.Http.DelegatingHandler" />
+        </member>
+        <member name="M:Net.Web.Api.Sdk.Security.Handlers.JwtTokenHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <inheritdoc />
+            <summary>
+            send as an asynchronous operation.
+            </summary>
+            <param name="request">The HTTP request message to send to the server.</param>
+            <param name="cancellationToken">A cancellation token to cancel operation.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />. The task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:Web.Api.Toolkit.Filters.Swagger.SwaggerDocumentOrderingFilter">
+            <summary>
+            Class SwaggerDocumentOrderingFilter.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter" />
+            </summary>
+            <seealso cref="T:Net.Web.Api.Sdk.Documentation.Filters.Common.SwaggerOrderingFilter" />
+        </member>
+    </members>
+</doc>

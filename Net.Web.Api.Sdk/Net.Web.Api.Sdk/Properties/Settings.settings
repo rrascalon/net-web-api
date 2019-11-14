@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Net.Web.Api.Sdk.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MaxAllowedUploadSize" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">2097152</Value>
+    </Setting>
+    <Setting Name="AllowedMimeTypes" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;application/msword&lt;/string&gt;
+  &lt;string&gt;application/vnd.openxmlformats-officedocument.wordprocessingml.document&lt;/string&gt;
+  &lt;string&gt;application/vnd.openxmlformats-officedocument.wordprocessingml.template&lt;/string&gt;
+  &lt;string&gt;application/vnd.ms-excel&lt;/string&gt;
+  &lt;string&gt;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&lt;/string&gt;
+  &lt;string&gt;application/vnd.openxmlformats-officedocument.spreadsheetml.template&lt;/string&gt;
+  &lt;string&gt;application/vnd.ms-powerpoint&lt;/string&gt;
+  &lt;string&gt;application/vnd.openxmlformats-officedocument.presentationml.presentation&lt;/string&gt;
+  &lt;string&gt;application/vnd.openxmlformats-officedocument.presentationml.template&lt;/string&gt;
+  &lt;string&gt;application/vnd.openxmlformats-officedocument.presentationml.slideshow&lt;/string&gt;
+  &lt;string&gt;image/bmp&lt;/string&gt;
+  &lt;string&gt;image/gif&lt;/string&gt;
+  &lt;string&gt;image/jpeg&lt;/string&gt;
+  &lt;string&gt;image/svg+xml&lt;/string&gt;
+  &lt;string&gt;image/tiff&lt;/string&gt;
+  &lt;string&gt;image/x-icon&lt;/string&gt;
+  &lt;string&gt;image/png&lt;/string&gt;
+  &lt;string&gt;application/json&lt;/string&gt;
+  &lt;string&gt;application/pdf&lt;/string&gt;
+  &lt;string&gt;text/plain&lt;/string&gt;
+  &lt;string&gt;application/xml&lt;/string&gt;
+  &lt;string&gt;text/xml&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

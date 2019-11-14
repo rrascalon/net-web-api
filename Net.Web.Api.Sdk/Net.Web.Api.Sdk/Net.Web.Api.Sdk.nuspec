@@ -7,6 +7,7 @@
     <authors>$author$</authors>
     <owners>$author$</owners>
     <license type="expression">BSD-2-Clause OR MIT</license>
+    <projectUrl>https://github.com/rrascalon/net-web-api</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Initial release.</releaseNotes>

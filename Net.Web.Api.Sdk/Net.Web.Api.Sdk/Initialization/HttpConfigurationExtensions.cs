@@ -99,7 +99,7 @@ namespace Net.Web.Api.Sdk.Initialization
             var container = new WindsorContainer();
 
             container.Install(new ControllerInstaller());
-            container.Install(new ServiceInstaller("Net.Web"));
+            container.Install(new ServiceInstaller());
 
             container.Kernel.Resolver.AddSubResolver(new CollectionResolver(container.Kernel, true));
 
@@ -317,6 +317,5 @@ namespace Net.Web.Api.Sdk.Initialization
         }
 
         #endregion
-
     }
 }

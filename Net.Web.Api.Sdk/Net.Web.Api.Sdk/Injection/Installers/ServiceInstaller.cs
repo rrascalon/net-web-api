@@ -101,7 +101,8 @@ namespace Net.Web.Api.Sdk.Injection.Installers
                             !@object.IsAbstract &&
                             (
                                 string.IsNullOrEmpty(_assemblyNamePrefix) ||
-                                @object.Assembly.FullName.StartsWith(_assemblyNamePrefix, StringComparison.CurrentCultureIgnoreCase)
+                                @object.Assembly.FullName.StartsWith(_assemblyNamePrefix,
+                                StringComparison.CurrentCultureIgnoreCase)
                             )
                         ).ToList()
                 );
@@ -111,7 +112,8 @@ namespace Net.Web.Api.Sdk.Injection.Installers
 
             foreach (var @class in classes)
             {
-                if (!string.IsNullOrEmpty(_assemblyNamePrefix) && !@class.Assembly.FullName.StartsWith(_assemblyNamePrefix, StringComparison.CurrentCultureIgnoreCase))
+                if (!string.IsNullOrEmpty(_assemblyNamePrefix) && !@class.Assembly.FullName.StartsWith(_assemblyNamePrefix, 
+                    StringComparison.CurrentCultureIgnoreCase))
                 {
                     continue;
                 }

@@ -1,6 +1,9 @@
 Documentation will come soon
 ----------------------------
 
+Added Net.Web.Api.Sdk.Web.Examples project
+------------------------------------------
+
 Startup steps
 -------------
 

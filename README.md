@@ -1,6 +1,13 @@
 Documentation will come soon
 ----------------------------
 
+Added Net.Web.Api.Sdk.Web.Examples project
+------------------------------------------
+	- Create a JWT Service
+	- Validate a JWT Service
+	- Revoke a JWT Service (Using LiteDB, future version will feature provider to different DBs or Cache Services) 
+	- Upload File Service
+    
 Startup steps
 -------------
 
@@ -16,13 +23,13 @@ Startup steps
 
 6- Add the following methods in:
 
-    - Application_Start
+	- Application_Start
     
-        GlobalConfiguration.Configuration.RegisterWebApi();
+  		GlobalConfiguration.Configuration.RegisterWebApi();
         
-    - Application_End
+	- Application_End
     
-        GlobalConfiguration.Configuration.UnRegisterWebApi();
+  		GlobalConfiguration.Configuration.UnRegisterWebApi();
         
 7- Set the startup page ASP.NET Web Application to swagger/ui/index
 

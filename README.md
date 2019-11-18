@@ -3,9 +3,9 @@ Documentation will come soon
 
 Added Net.Web.Api.Sdk.Web.Examples project
 ------------------------------------------
-	- Create A JWT Token API Service
-	- Validate a JWT Token Service
-	- Revoke a JWT Token Service (Using LiteDB, future version will feature provider to different DBs or Cache Services) 
+	- Create a JWT Service
+	- Validate a JWT Service
+	- Revoke a JWT Service (Using LiteDB, future version will feature provider to different DBs or Cache Services) 
 	- Upload File Service
     
 Startup steps

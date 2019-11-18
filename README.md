@@ -24,7 +24,7 @@ Startup steps
     
         GlobalConfiguration.Configuration.UnRegisterWebApi();
         
-7- Set the startup page ASP.NET Web Application to swagger.html
+7- Set the startup page ASP.NET Web Application to swagger/ui/index
 
 
 

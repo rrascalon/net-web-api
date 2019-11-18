@@ -9,15 +9,5 @@
         /// The about
         /// </summary>
         internal const string ABOUT = "About";
-
-        /// <summary>
-        /// The security
-        /// </summary>
-        internal const string SECURITY = "Security";
-
-        /// <summary>
-        /// The common
-        /// </summary>
-        internal const string COMMON = "Common";
     }
 }

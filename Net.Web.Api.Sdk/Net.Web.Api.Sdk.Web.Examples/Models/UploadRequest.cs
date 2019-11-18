@@ -2,7 +2,7 @@
 using Net.Web.Api.Sdk.Attributes.Validations;
 using System.ComponentModel.DataAnnotations;
 
-namespace Net.Web.Api.Sdk.Models.Services.Common
+namespace Net.Web.Api.Sdk.Web.Examples.Models
 {
     /// <summary>
     /// Class UploadRequest.
@@ -12,7 +12,7 @@ namespace Net.Web.Api.Sdk.Models.Services.Common
         #region Public Properties
 
         /// <summary>
-        /// Gets or sets the file information.
+        /// File to upload.
         /// </summary>
         /// <value>The file information.</value>
         [Required]

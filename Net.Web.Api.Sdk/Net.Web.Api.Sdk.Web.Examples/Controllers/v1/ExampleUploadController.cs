@@ -1,10 +1,11 @@
 ﻿using Microsoft.Web.Http;
 using Net.Web.Api.Sdk.Common.Constants;
-using Net.Web.Api.Sdk.Controllers.Common;
 using Net.Web.Api.Sdk.Documentation.Attributes;
-using Net.Web.Api.Sdk.Interfaces.Common;
-using Net.Web.Api.Sdk.Models.Services.Common;
+using Net.Web.Api.Sdk.Interfaces.File;
 using Net.Web.Api.Sdk.Security.Attributes;
+using Net.Web.Api.Sdk.Web.Examples.Classes.Constants;
+using Net.Web.Api.Sdk.Web.Examples.Controllers.Common;
+using Net.Web.Api.Sdk.Web.Examples.Models;
 using Swashbuckle.Swagger.Annotations;
 using System;
 using System.Collections.Generic;
@@ -12,26 +13,25 @@ using System.Net;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace Net.Web.Api.Sdk.Controllers.v1
+namespace Net.Web.Api.Sdk.Web.Examples.Controllers.v1
 {
     /// <summary>
-    /// Class SdkUploadController. This class cannot be inherited.
-    /// Implements the <see cref="SdkController" />
+    /// Class ExampleUploadController. This class cannot be inherited.
+    /// Implements the <see cref="ExampleController" />
     /// </summary>
-    /// <seealso cref="SdkController" />
+    /// <seealso cref="ExampleController" />
     [EnableCors("*", "*", "*", SupportsCredentials = true)]
     [AllowAnonymous]
     [ApiVersion("1.0")]
     [RoutePrefix(RouteConstants.ROUTE_PREFIX_VERSION)]
-    public sealed class SdkUploadController : SdkController
+    public sealed class ExampleUploadController : ExampleController
     {
         #region Services
 
-
         /// <summary>
-        /// The common service
+        /// The file service
         /// </summary>
-        private readonly ICommonService _commonService;
+        private readonly IFileService _fileService;
 
         #endregion
 
@@ -39,13 +39,13 @@ namespace Net.Web.Api.Sdk.Controllers.v1
 
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SdkUploadController"/> class.
+        /// Initializes a new instance of the <see cref="ExampleUploadController"/> class.
         /// </summary>
-        /// <param name="commonService">The common service.</param>
-        /// <exception cref="ArgumentNullException">commonService</exception>
-        public SdkUploadController(ICommonService commonService)
+        /// <param name="fileService">The file service.</param>
+        /// <exception cref="ArgumentNullException">fileService</exception>
+        public ExampleUploadController(IFileService fileService)
         {
-            _commonService = commonService ?? throw new ArgumentNullException(nameof(commonService));
+            _fileService = fileService ?? throw new ArgumentNullException(nameof(fileService));
         }
 
         #endregion
@@ -53,20 +53,20 @@ namespace Net.Web.Api.Sdk.Controllers.v1
         #region Public Services
 
         /// <summary>
-        /// Uploads the file.
+        /// Uploads a file.
         /// </summary>
         /// <param name="parameters">The parameters.</param>
         /// <returns>IHttpActionResult.</returns>
         [HttpPost]
-        [Route("sdk/uploadFile")]
+        [Route(ROUTE_PREFIX + "uploadFile")]
         [TokenAuthorize]
         [SwaggerUploadOperation(typeof(UploadRequest))]
         [SwaggerMethodOrder(1)]
-        [SwaggerOperation(Tags = new[] { SwaggerSdkConstants.COMMON })]        
+        [SwaggerOperation(Tags = new[] { ExampleControllerGroups.OTHER })]
         [SwaggerConsumes(ConsumerProducerConstants.MULTIPART)]
         [SwaggerProduces(ConsumerProducerConstants.JSON)]
         [SwaggerResponse(HttpStatusCode.OK)]
-        [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(IList<string>), Description = ResponseDescriptionConstants.INVALID_PARAMETER)]     
+        [SwaggerResponse(HttpStatusCode.BadRequest, Type = typeof(IList<string>), Description = ResponseDescriptionConstants.INVALID_PARAMETER)]
         [SwaggerResponse(HttpStatusCode.Forbidden, Description = ResponseDescriptionConstants.ACCESS_FORBIDDEN)]
         [SwaggerResponse(HttpStatusCode.Unauthorized, Description = ResponseDescriptionConstants.AUTHORIZATION_FAILED)]
         [SwaggerResponse(HttpStatusCode.InternalServerError, Description = ResponseDescriptionConstants.TECHNICAL_ERROR)]
@@ -75,8 +75,8 @@ namespace Net.Web.Api.Sdk.Controllers.v1
         {
             try
             {
-                return Ok(_commonService.UploadFile(
-                    parameters.FileInformation.Buffer, 
+                return Ok(_fileService.UploadFile(
+                    parameters.FileInformation.Buffer,
                     parameters.FileInformation.FileName));
             }
             catch (Exception ex)

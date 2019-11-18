@@ -1,13 +1,13 @@
 ﻿using Net.Web.Api.Sdk.Injection.Attributes;
 using System;
 
-namespace Net.Web.Api.Sdk.Interfaces.Common
+namespace Net.Web.Api.Sdk.Interfaces.File
 {
     /// <summary>
-    /// Interface ICommonService
+    /// Interface IFileService
     /// </summary>
     [InjectInterfaceService]
-    public interface ICommonService
+    public interface IFileService
     {
         /// <summary>
         /// Uploads the file.

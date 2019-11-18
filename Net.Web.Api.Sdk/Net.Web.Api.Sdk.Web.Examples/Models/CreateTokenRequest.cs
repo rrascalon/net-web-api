@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Net.Web.Api.Sdk.Models.Services.Token
+namespace Net.Web.Api.Sdk.Web.Examples.Models
 {
     /// <summary>
     /// Class CreateTokenRequest.

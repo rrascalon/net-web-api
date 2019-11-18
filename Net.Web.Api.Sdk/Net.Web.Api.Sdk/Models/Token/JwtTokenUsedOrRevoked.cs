@@ -10,6 +10,12 @@ namespace Net.Web.Api.Sdk.Models.Token
         #region Public Properties
 
         /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>The identifier.</value>
+        public Guid Id { get; set; }
+
+        /// <summary>
         /// Gets or sets the token.
         /// </summary>
         /// <value>The token.</value>

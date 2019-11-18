@@ -1,17 +1,17 @@
-﻿using Net.Web.Api.Sdk.Interfaces.Common;
+﻿using Net.Web.Api.Sdk.Interfaces.File;
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace Net.Web.Api.Sdk.Implementations.Common
+namespace Net.Web.Api.Sdk.Implementations.File
 {
     /// <summary>
-    /// Class CommonService.
-    /// Implements the <see cref="ICommonService" />
+    /// Class FileService.
+    /// Implements the <see cref="IFileService" />
     /// </summary>
-    /// <seealso cref="ICommonService" />
-    public class CommonService : ICommonService
+    /// <seealso cref="IFileService" />
+    public class FileService : IFileService
     {
         #region Constants
 
@@ -42,13 +42,13 @@ namespace Net.Web.Api.Sdk.Implementations.Common
 
             var destinationFile = GetUniqueFileName(Path.Combine(destinationDirectory, fileName));
 
-            File.WriteAllBytes(destinationFile, content);
+            System.IO.File.WriteAllBytes(destinationFile, content);
 
             var url = HttpContext.Current.Request.Url.AbsoluteUri;
 
             url = url.Replace(HttpContext.Current.Request.Url.AbsolutePath, string.Empty);
 
-            return new Uri($"{url}/{Path.GetFileName(destinationFile)}");
+            return new Uri($"{url}/{UPLOAD_DIRECTORY_NAME}/{Path.GetFileName(destinationFile)}");
         }
 
         #endregion
@@ -62,7 +62,7 @@ namespace Net.Web.Api.Sdk.Implementations.Common
         /// <returns>System.String.</returns>
         private static string GetUniqueFileName(string fullFileName)
         {
-            if (!File.Exists(fullFileName))
+            if (!System.IO.File.Exists(fullFileName))
             {
                 return fullFileName;
             }
@@ -91,7 +91,7 @@ namespace Net.Web.Api.Sdk.Implementations.Common
 
                 fullFileName = Path.Combine(folder, $"{filename} ({number}){extension}");
             }
-            while (File.Exists(fullFileName));
+            while (System.IO.File.Exists(fullFileName));
 
             return fullFileName;
         }

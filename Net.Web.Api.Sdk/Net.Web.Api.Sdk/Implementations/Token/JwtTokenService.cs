@@ -541,7 +541,7 @@ namespace Net.Web.Api.Sdk.Implementations.Token
 
             var mapper = BsonMapper.Global;
 
-            mapper.Entity<JwtTokenUsedOrRevoked>().Id(c => c.Token);
+            mapper.Entity<JwtTokenUsedOrRevoked>().Id(c => c.Id);
         }
 
         #endregion

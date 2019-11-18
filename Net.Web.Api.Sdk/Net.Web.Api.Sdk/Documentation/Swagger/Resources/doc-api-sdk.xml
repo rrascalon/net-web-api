@@ -159,16 +159,6 @@
             The about
             </summary>
         </member>
-        <member name="F:Net.Web.Api.Sdk.Common.Constants.SwaggerSdkConstants.SECURITY">
-            <summary>
-            The security
-            </summary>
-        </member>
-        <member name="F:Net.Web.Api.Sdk.Common.Constants.SwaggerSdkConstants.COMMON">
-            <summary>
-            The common
-            </summary>
-        </member>
         <member name="T:Net.Web.Api.Sdk.Common.Http.ChallengeOnUnauthorizedResult">
             <summary>
             Class AddChallengeOnUnauthorizedResult.
@@ -553,69 +543,6 @@
             <summary>
             Returns the .Net Web API SDK informations.
             </summary>
-            <returns>IHttpActionResult.</returns>
-        </member>
-        <member name="T:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController">
-            <summary>
-            Class SdkTokenController.
-            Implements the <see cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
-            </summary>
-            <seealso cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
-        </member>
-        <member name="F:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController._tokenService">
-            <summary>
-            The token service
-            </summary>
-        </member>
-        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.#ctor(Net.Web.Api.Sdk.Interfaces.Token.IJwtTokenService)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController"/> class.
-            </summary>
-            <param name="tokenService">The token service.</param>
-            <exception cref="T:System.ArgumentNullException">tokenService</exception>
-        </member>
-        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.CreateToken(Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest)">
-            <summary>
-            Creates a new JWT Token.
-            </summary>
-            <returns>IHttpActionResult.</returns>
-        </member>
-        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.RevokeToken">
-            <summary>
-            Revokes a token passed in the authorization header.
-            </summary>
-            <returns>IHttpActionResult.</returns>
-        </member>
-        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkTokenController.ValidateToken">
-            <summary>
-            Validates a token passed in the authorization header.
-            </summary>
-            <returns>IHttpActionResult.</returns>
-        </member>
-        <member name="T:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController">
-            <summary>
-            Class SdkUploadController. This class cannot be inherited.
-            Implements the <see cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
-            </summary>
-            <seealso cref="T:Net.Web.Api.Sdk.Controllers.Common.SdkController" />
-        </member>
-        <member name="F:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController._commonService">
-            <summary>
-            The common service
-            </summary>
-        </member>
-        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController.#ctor(Net.Web.Api.Sdk.Interfaces.Common.ICommonService)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController"/> class.
-            </summary>
-            <param name="commonService">The common service.</param>
-            <exception cref="T:System.ArgumentNullException">commonService</exception>
-        </member>
-        <member name="M:Net.Web.Api.Sdk.Controllers.v1.SdkUploadController.UploadFile(Net.Web.Api.Sdk.Models.Services.Common.UploadRequest)">
-            <summary>
-            Uploads the file.
-            </summary>
-            <param name="parameters">The parameters.</param>
             <returns>IHttpActionResult.</returns>
         </member>
         <member name="T:Net.Web.Api.Sdk.Documentation.Attributes.SwaggerConsumesAttribute">
@@ -1136,19 +1063,19 @@
             <param name="str">The string.</param>
             <returns>System.String.</returns>
         </member>
-        <member name="T:Net.Web.Api.Sdk.Implementations.Common.CommonService">
+        <member name="T:Net.Web.Api.Sdk.Implementations.File.FileService">
             <summary>
-            Class CommonService.
-            Implements the <see cref="T:Net.Web.Api.Sdk.Interfaces.Common.ICommonService" />
+            Class FileService.
+            Implements the <see cref="T:Net.Web.Api.Sdk.Interfaces.File.IFileService" />
             </summary>
-            <seealso cref="T:Net.Web.Api.Sdk.Interfaces.Common.ICommonService" />
+            <seealso cref="T:Net.Web.Api.Sdk.Interfaces.File.IFileService" />
         </member>
-        <member name="F:Net.Web.Api.Sdk.Implementations.Common.CommonService.UPLOAD_DIRECTORY_NAME">
+        <member name="F:Net.Web.Api.Sdk.Implementations.File.FileService.UPLOAD_DIRECTORY_NAME">
             <summary>
             The upload directory name
             </summary>
         </member>
-        <member name="M:Net.Web.Api.Sdk.Implementations.Common.CommonService.UploadFile(System.Byte[],System.String)">
+        <member name="M:Net.Web.Api.Sdk.Implementations.File.FileService.UploadFile(System.Byte[],System.String)">
             <summary>
             Uploads the file.
             </summary>
@@ -1156,7 +1083,7 @@
             <param name="fileName">Name of the file.</param>
             <returns>Uri.</returns>
         </member>
-        <member name="M:Net.Web.Api.Sdk.Implementations.Common.CommonService.GetUniqueFileName(System.String)">
+        <member name="M:Net.Web.Api.Sdk.Implementations.File.FileService.GetUniqueFileName(System.String)">
             <summary>
             Gets the name of the unique file.
             </summary>
@@ -1734,12 +1661,12 @@
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
-        <member name="T:Net.Web.Api.Sdk.Interfaces.Common.ICommonService">
+        <member name="T:Net.Web.Api.Sdk.Interfaces.File.IFileService">
             <summary>
-            Interface ICommonService
+            Interface IFileService
             </summary>
         </member>
-        <member name="M:Net.Web.Api.Sdk.Interfaces.Common.ICommonService.UploadFile(System.Byte[],System.String)">
+        <member name="M:Net.Web.Api.Sdk.Interfaces.File.IFileService.UploadFile(System.Byte[],System.String)">
             <summary>
             Uploads the file.
             </summary>
@@ -1836,64 +1763,6 @@
             Cleanups the token database.
             </summary>
             <returns>System.Int32.</returns>
-        </member>
-        <member name="T:Net.Web.Api.Sdk.Models.Services.Common.UploadRequest">
-            <summary>
-            Class UploadRequest.
-            </summary>
-        </member>
-        <member name="P:Net.Web.Api.Sdk.Models.Services.Common.UploadRequest.FileInformation">
-            <summary>
-            Gets or sets the file information.
-            </summary>
-            <value>The file information.</value>
-        </member>
-        <member name="T:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest">
-            <summary>
-            Class CreateTokenRequest.
-            </summary>
-        </member>
-        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest.Name">
-            <summary>
-            The token name as defined in the token configuration files.
-                - Case insensitive.
-            </summary>
-            <value>The name.</value>
-        </member>
-        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest.UniqueId">
-            <summary>
-            The token unique identifier that will be used as identity name.
-                - User name,
-                - Email address,
-                - Any other unique identifiers.
-            </summary>
-            <value>The unique identifier.</value>
-        </member>
-        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenRequest.Payload">
-            <summary>
-            The token payload.
-                - keys cannot be empty.
-                - keys are to be unique.
-                - values cannot be empty.
-            </summary>
-            <value>The payload.</value>
-        </member>
-        <member name="T:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult">
-            <summary>
-            Class CreateTokenResult.
-            </summary>
-        </member>
-        <member name="P:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult.AccessToken">
-            <summary>
-            The JWT token created.
-            </summary>
-            <value>The access token.</value>
-        </member>
-        <member name="M:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Net.Web.Api.Sdk.Models.Services.Token.CreateTokenResult"/> class.
-            </summary>
-            <param name="token">The token.</param>
         </member>
         <member name="F:Net.Web.Api.Sdk.Models.Token.TokenInternalClaimNames.nbf">
             <summary>
@@ -2204,6 +2073,12 @@
             <summary>
             Class JwtTokenUsedOrRevoked.
             </summary>
+        </member>
+        <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
         </member>
         <member name="P:Net.Web.Api.Sdk.Models.Token.JwtTokenUsedOrRevoked.Token">
             <summary>

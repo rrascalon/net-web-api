@@ -13,3 +13,14 @@
 /Net.Web.Api.Sdk/Net.Web.Api.Sdk/Net.Web.Api.Sdk.1.0.0.nupkg
 /Net.Web.Api.Sdk/Net.Web.Api.Sdk/Net.Web.Api.Sdk.csproj.user
 *.nupkg
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/bin
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/db
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/obj/Debug
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/Upload
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/doc-api-sdk.xml
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/doc-api-sdk-example.xml
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/Net.Web.Api.Sdk.Web.Examples.csproj.user
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/SwaggerConfigurationSdk.json
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/swagger.html
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/packages.info
+/Net.Web.Api.Sdk/Net.Web.Api.Sdk.Web.Examples/token-sdk.config

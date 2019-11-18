@@ -85,7 +85,7 @@ namespace Net.Web.Api.Sdk.Implementations.Information
 
             if (!string.IsNullOrEmpty(content))
             {               
-                File.WriteAllText(nugetPackageConfigFileName, content);
+                System.IO.File.WriteAllText(nugetPackageConfigFileName, content);
             }
 
             dynamic result = new ExpandoObject();
@@ -96,7 +96,7 @@ namespace Net.Web.Api.Sdk.Implementations.Information
 
             result.availableTokens = tokens;
 
-            if(File.Exists(nugetPackageConfigFileName))
+            if(System.IO.File.Exists(nugetPackageConfigFileName))
             {
                 var packageConfiguration = new PackageReferenceFile(nugetPackageConfigFileName);
                 var allPacakges = packageConfiguration.GetPackageReferences();

@@ -11,9 +11,7 @@ namespace Net.Web.Api.Sdk.Controllers.Common
     /// <seealso cref="ApiController" />
     [SwaggerOperationOrder(From = SwaggerOperationOrderAttribute.OperationFrom.Sdk,
         OperationTags = new[] {
-            SwaggerSdkConstants.ABOUT,
-            SwaggerSdkConstants.SECURITY,
-            SwaggerSdkConstants.COMMON
+            SwaggerSdkConstants.ABOUT
         })]
     public class SdkController : ApiController {}
 }
